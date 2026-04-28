@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Informacion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <canvas class="binary-canvas" aria-hidden="true"></canvas>
+  <header>
+    <h1 class="metal">Guía de Información</h1>
+    <p>Consulta los pasos principales de instalacion y activacion desde una sola pagina.</p>
+  </header>
+
+  <main>
+    <a href="inicio.html" class="boton">Ir a Inicio</a>
+
+    <section class="card">
+      <h2>Como instalar Office LTSC</h2>
+      <button
+        class="boton"
+        data-toggle-target="installToggle"
+        data-label-show="Mostrar instrucciones"
+        data-label-hide="Ocultar instrucciones"
+        aria-expanded="false"
+      >
+        Mostrar instrucciones
+      </button>
+
+      <div id="installToggle" class="hidden">
+        <p>Pasos basicos para ejecutar la instalacion desde CMD.</p>
+        <div class="download-card">
+          <h3>Instalacion</h3>
+          <p>Ubica la carpeta en CMD usando <code>cd</code>.</p>
+          <p>Ejemplo: <code>cd C:\Users\TuUsuario\Desktop\Office</code></p>
+          <p>Luego usa <code>dir</code> para verificar que existan <code>setup.exe</code> y <code>configuration.xml</code>.</p>
+          <p>Finalmente ejecuta <code>setup /configure configuration.xml</code>.</p>
+          <p>Referencia: <a href="https://learn.microsoft.com/es-es/office/ltsc/2021/deploy#install-office-ltsc-2021-by-using-the-office-deployment-tool" target="_blank" rel="noopener">guia oficial de Microsoft</a>.</p>
+          <img src="imagenes/imagen.png" alt="Paso de instalacion de Office" style="width:100%; border-radius:16px;">
+        </div>
+      </div>
+    </section>
+
+  <section class="card">
+      <h2>como descargar los navegadores y complementos </h2>
+      <button
+        class="boton"
+        data-toggle-target="installToggle3"
+        data-label-show="Mostrar instrucciones"
+        data-label-hide="Ocultar instrucciones"
+        aria-expanded="false"
+      >
+        Mostrar instrucciones
+      </button>
+
+      <div id="installToggle3" class="hidden">
+        <p>Resumen del flujo de descarga mostrado en tus capturas.</p>
+        <div class="download-card">
+          <h3>Pasos para descargar</h3>
+          <p>ir a descarga y selecionar lo que quiere descargar tanto como navegadores o complementos</p>
+          <img src="imagenes/imagen 4.png" alt="Paso de descarga" style="width:100%; border-radius:16px; margin-top:16px;">
+          <p>seleciona segun lo que quiere descargar si navegadores o complementos</p>
+          <img src="imagenes/imagen 5.png" alt="Paso de descarga" style="width:100%; border-radius:16px; margin-top:16px;">
+          <p>despues de seleccionar lo que quiere descargar dar click en el boton de descarga</p>
+          <p> despues de que se descargue dar click en historial de descargas</p>
+          <img src="imagenes/imagen 6.png" alt="Menu de activacion" style="width:100%; border-radius:16px; margin-top:16px;">
+        <p> ya en el historial hay dos opciones dar click en mostrar descargas &#x1F4C1; si son varias que tiene que descargar </p>
+        <p> o tambien dar en ejcutar aplicacion hay mismo si solo nesesita una con &#8599;</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    creado por sebas.
+  </footer>
+
+  
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
