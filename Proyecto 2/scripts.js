@@ -34,28 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const getSelectedDownloads = () => downloadChecks.filter((check) => check.checked);
 
     const triggerDownload = (checkbox, index) => {
-      const link = document.createElement('a');
-      link.href = checkbox.dataset.downloadHref || '';
-      link.download = '';
-      link.style.display = 'none';
-      document.body.appendChild(link);
-
-      window.setTimeout(() => {
-        link.click();
-        link.remove();
-      }, index * 250);
+      window.open(checkbox.dataset.downloadHref, '_blank');
     };
 
     downloadButton.addEventListener('click', () => {
       const selected = getSelectedDownloads();
 
       if (!selected.length) {
-        setFeedback('Selecciona al menos una opcion para descargar.');
+        setFeedback('Selecciona al menos una opcion para abrir enlaces.');
         return;
       }
 
       selected.forEach((checkbox, index) => triggerDownload(checkbox, index));
-      setFeedback(`Se iniciara la descarga de ${selected.length} archivo(s).`);
+      setFeedback(`Se abrirán ${selected.length} enlace(s).`);
     });
 
     if (selectAllButton) {
@@ -80,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
       check.addEventListener('change', () => {
         const total = getSelectedDownloads().length;
         setFeedback(
-          total ? `${total} archivo(s) seleccionado(s).` : 'No hay archivos seleccionados.'
+          total ? `${total} enlace(s) seleccionado(s).` : 'No hay enlaces seleccionados.'
         );
       });
     });
