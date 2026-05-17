@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Bloc de notas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <canvas class="binary-canvas" aria-hidden="true"></canvas>
+  <header class="hero-header">
+    <h1 class="metal">Bloc de Notas</h1>
+    <p>Escribe tus apuntes, guardalos en el navegador y descarga lo que necesites cuando quieras.</p>
+  </header>
+
+  <main>
+    <a class="boton" href="inicio.html">Ir a Inicio</a>
+
+    <section class="card notes-layout">
+      <div class="notes-editor">
+        <h2>Crear nota</h2>
+        <p>Completa el titulo y el contenido para guardar tu nota.</p>
+
+        <label class="notes-label" for="titulo">Titulo</label>
+        <input type="text" id="titulo" class="notes-input" placeholder="Ejemplo: Programas por instalar">
+
+        <label class="notes-label" for="contenido">Contenido</label>
+        <textarea id="contenido" class="notes-textarea" placeholder="Escribe aqui tu nota..."></textarea>
+
+        <div class="download-actions">
+          <button type="button" class="boton" data-note-save>Guardar nota</button>
+          <button type="button" class="boton" data-note-clear-form>Limpiar formulario</button>
+          <button type="button" class="boton" data-note-delete-all>Borrar todo</button>
+        </div>
+
+        <p class="selection-feedback" data-note-feedback></p>
+      </div>
+
+      <div class="notes-list-wrapper">
+        <div class="notes-list-header">
+          <h2>Notas guardadas</h2>
+          <span class="notes-counter" data-note-count>0 notas</span>
+        </div>
+        <div id="posts" class="notes-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    creado por sebas.
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>

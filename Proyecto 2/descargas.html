@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Descargas de navegadores</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="descargas-page">
+<header>
+   <canvas class="binary-canvas" aria-hidden="true"></canvas>
+  <h1>Enlaces</h1>
+  <p>Marca las opciones que quieras y luego abre los enlaces seleccionados.</p>
+</header>
+
+
+<main>
+  <button onclick="window.location.href='inicio.html'" class="boton">Ir a Inicio</button>
+
+  <section class="card">
+    <h2>Navegadores necesarios</h2>
+
+    <button
+      class="boton"
+      data-toggle-target="installToggle3"
+      data-label-show="Mostrar navegadores"
+      data-label-hide="Ocultar navegadores"
+      aria-expanded="false"
+    >
+      Mostrar navegadores
+    </button>
+
+    <div id="installToggle3" class="hidden">
+      <p>Los enlaces te llevarán a los sitios oficiales de descarga.</p>
+      <div class="grid">
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Google Chrome" data-download-href="https://www.google.com/chrome/">
+          <span class="download-card">
+            <span>
+              <h3>Google Chrome</h3>
+              <p>Navegador rapido y seguro que sirve para entrar a paginas web, usar extensiones, sincronizar tu cuenta y navegar con actualizaciones automaticas.</p>
+            </span>
+            <a class="download-btn" href="https://www.google.com/chrome/" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Brave Browser" data-download-href="https://brave.com/download/">
+          <span class="download-card">
+            <span>
+              <h3>Brave Browser</h3>
+              <p>Navegador enfocado en la privacidad que sirve para navegar con mayor seguridad, bloquear anuncios y rastreadores, y cargar sitios mas rapido.</p>
+            </span>
+            <a class="download-btn" href="https://brave.com/download/" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Opera GX" data-download-href="https://www.opera.com/gx">
+          <span class="download-card">
+            <span>
+              <h3>Opera GX</h3>
+              <p>Navegador pensado para gamers que sirve para navegar y jugar con mejor control del consumo de RAM, CPU y red, ademas de un diseno personalizable.</p>
+            </span>
+            <a class="download-btn" href="https://www.opera.com/gx" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Firefox" data-download-href="https://www.mozilla.org/firefox/">
+          <span class="download-card">
+            <span>
+              <h3>Firefox</h3>
+              <p>Navegador de codigo abierto que sirve para visitar sitios web con buena privacidad, personalizacion mediante extensiones y rendimiento estable.</p>
+            </span>
+            <a class="download-btn" href="https://www.mozilla.org/firefox/" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Opera" data-download-href="https://www.opera.com/">
+          <span class="download-card">
+            <span>
+              <h3>Opera</h3>
+              <p>Navegador ligero que sirve para navegar con herramientas integradas como VPN, ahorro de datos, bloqueador de anuncios y acceso rapido a funciones extra.</p>
+            </span>
+            <a class="download-btn" href="https://www.opera.com/" target="_blank">Enlace</a>
+          </span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Complementos utiles</h2>
+
+    <button
+      class="boton"
+      data-toggle-target="installToggle2"
+      data-label-show="Mostrar complementos"
+      data-label-hide="Ocultar complementos"
+      aria-expanded="false"
+    >
+      Mostrar complementos
+    </button>
+
+    <div id="installToggle2" class="hidden">
+      <div class="grid">
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Ashampoo" data-download-href="https://www.ashampoo.com/">
+          <span class="download-card">
+            <span>
+              <h3>Ashampoo</h3>
+              <p>Programa de optimizacion que sirve para limpiar archivos innecesarios, mejorar el rendimiento del equipo y mantener Windows mas ordenado.</p>
+            </span>
+            <a class="download-btn" href="https://www.ashampoo.com/" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="AnyDesk" data-download-href="https://anydesk.com/">
+          <span class="download-card">
+            <span>
+              <h3>AnyDesk</h3>
+              <p>Aplicacion de escritorio remoto que sirve para conectarte a otra computadora, brindar soporte tecnico y controlar equipos a distancia de forma segura.</p>
+            </span>
+            <a class="download-btn" href="https://anydesk.com/" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="WinRAR" data-download-href="https://www.winrar.es/">
+          <span class="download-card">
+            <span>
+              <h3>WinRAR</h3>
+              <p>Programa que sirve para comprimir y descomprimir archivos en formatos como RAR y ZIP, ahorrar espacio y organizar archivos grandes.</p>
+            </span>
+            <a class="download-btn" href="https://www.winrar.es/" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Google Drive" data-download-href="https://www.google.com/drive/download/">
+          <span class="download-card">
+            <span>
+              <h3>Google Drive</h3>
+              <p>Aplicacion que sirve para guardar archivos en la nube, sincronizar carpetas entre dispositivos y compartir documentos de forma sencilla.</p>
+            </span>
+            <a class="download-btn" href="https://www.google.com/drive/download/" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Adobe Reader" data-download-href="https://get.adobe.com/reader/">
+          <span class="download-card">
+            <span>
+              <h3>Adobe Reader</h3>
+              <p>Programa que sirve para abrir, leer, imprimir y completar archivos PDF, ademas de acceder a herramientas basicas de visualizacion.</p>
+            </span>
+            <a class="download-btn" href="https://get.adobe.com/reader/" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Temperatura del sistema" data-download-href="https://www.hwinfo.com/download/">
+          <span class="download-card">
+            <span>
+              <h3>Temperatura del sistema</h3>
+              <p>Herramienta que sirve para revisar la temperatura del sistema, monitorear sensores del hardware y detectar posibles problemas de sobrecalentamiento.</p>
+            </span>
+            <a class="download-btn" href="https://www.hwinfo.com/download/" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="CPU-Z" data-download-href="https://www.cpuid.com/softwares/cpu-z.html">
+          <span class="download-card">
+            <span>
+              <h3>CPU-Z</h3>
+              <p>Utilidad que sirve para ver informacion detallada del procesador, la memoria RAM, la placa base y otros componentes del equipo.</p>
+            </span>
+            <a class="download-btn" href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+        <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="WhatsApp" data-download-href="https://www.whatsapp.com/download">
+          <span class="download-card">
+            <span>
+              <h3>WhatsApp</h3>
+              <p>Aplicacion de mensajeria instantanea que permite enviar mensajes, hacer llamadas y compartir archivos con amigos y familiares.</p>
+            </span>
+            <a class="download-btn" href="https://www.whatsapp.com/download" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>avtivirus y herramientas de seguridad</h2>
+
+    <button
+      class="boton"
+      data-toggle-target="installToggle4"
+      data-label-show="Mostrar antivirus"
+      data-label-hide="Ocultar antivirus"
+      aria-expanded="false"
+    >
+      Mostrar antivirus
+    </button>
+
+    <div id="installToggle4" class="hidden">
+      <p>Los enlaces te llevarán a los sitios oficiales de descarga.</p>
+      <div class="grid">
+
+ <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Bitdefender" data-download-href="https://www.bitdefender.com/solutions/free.html">
+          <span class="download-card">
+            <span>
+              <h3>Bitdefender</h3>
+              <p>Antivirus que sirve para proteger la computadora contra virus, malware y amenazas en tiempo real, con analisis rapidos y seguridad avanzada.</p>
+            </span>
+            <a class="download-btn" href="https://www.bitdefender.com/solutions/free.html" target="_blank">Enlace</a>
+          </span>
+        </label>
+     
+      <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="CCleaner" data-download-href="https://www.ccleaner.com/ccleaner/download">
+          <span class="download-card">
+            <span>
+              <h3>CCleaner</h3>
+              <p>Herramienta que sirve para limpiar archivos temporales, liberar espacio, mejorar el rendimiento del sistema y administrar algunas funciones de mantenimiento.</p>
+            </span>
+            <a class="download-btn" href="https://www.ccleaner.com/ccleaner/download" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+         <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Avast Free Antivirus" data-download-href="https://www.avast.com/free-antivirus-download">
+          <span class="download-card">
+            <span>
+              <h3>Avast Free Antivirus</h3>
+              <p>Antivirus gratuito que sirve para proteger tu equipo en tiempo real, detectar amenazas comunes y reforzar la seguridad mientras navegas o descargas archivos.</p>
+            </span>
+            <a class="download-btn" href="https://www.avast.com/free-antivirus-download" target="_blank">Enlace</a>
+          </span>
+        </label>
+
+         <label class="download-option">
+          <input type="checkbox" class="download-check" data-download-name="Avira" data-download-href="https://www.avira.com/free-antivirus">
+          <span class="download-card">
+            <span>
+              <h3>Avira</h3>
+              <p>Antivirus gratuito que sirve para detectar virus, proteger tu privacidad, analizar archivos sospechosos y mantener el equipo mas seguro.</p>
+            </span>
+            <a class="download-btn" href="https://www.avira.com/free-antivirus" target="_blank">Enlace</a>
+          </span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+
+      <button type="button" class="boton" data-select-all>Seleccionar todo</button>
+      <button type="button" class="boton" data-clear-selection>Limpiar</button>
+      <button type="button" class="boton" data-download-selected>Abrir enlaces seleccionados</button>
+    <p class="selection-feedback" data-download-feedback></p>
+ 
+  </main>
+    
+<footer>
+  creado por sebas.
+</footer>
+
+<script src="scripts.js" defer></script>
+</body>
+</html>
+

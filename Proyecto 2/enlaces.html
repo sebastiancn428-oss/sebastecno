@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Enlaces</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+     <canvas class="binary-canvas" aria-hidden="true"></canvas>
+    <h1 class="metal">Enlaces</h1>
+    <p>Accede rapido a tus documentos y servicios mas usados desde un solo lugar.</p>
+  </header>
+
+  <main>
+    <a href="inicio.html" class="boton">Ir a Inicio</a>
+
+    <section class="card">
+      <h2>Google Docs</h2>
+      <button
+        class="boton"
+        data-toggle-target="installToggle3"
+        data-label-show="Mostrar enlaces"
+        data-label-hide="Ocultar enlaces"
+        aria-expanded="false"
+      >
+        Mostrar enlaces
+      </button>
+
+      <div id="installToggle3" class="hidden">
+        <p>Entra a tus herramientas de Google para documentos y hojas de calculo.</p>
+        <div class="grid">
+          <a class="download-card" href="https://docs.google.com/document/u/0/" target="_blank" rel="noopener">
+            <div>
+              <h3>Documento</h3>
+              <p>Accede a tu documento en Google Docs.</p>
+            </div>
+          </a>
+
+          <a class="download-card" href="https://docs.google.com/spreadsheets/u/0/" target="_blank" rel="noopener">
+            <div>
+              <h3>Hoja de calculo</h3>
+              <p>Abre la hoja de calculo en Google Sheets.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Microsoft Office</h2>
+      <button
+        class="boton"
+        data-toggle-target="installToggle4"
+        data-label-show="Mostrar enlaces"
+        data-label-hide="Ocultar enlaces"
+        aria-expanded="false"
+      >
+        Mostrar enlaces
+      </button>
+
+      <div id="installToggle4" class="hidden">
+        <p>Abre Word y Excel en linea desde esta pagina.</p>
+        <div class="grid">
+          <a class="download-card" href="https://word.cloud.microsoft/create/es/document-editor/" target="_blank" rel="noopener">
+            <div>
+              <h3>Documento</h3>
+              <p>Accede a tu documento en Microsoft Word.</p>
+            </div>
+          </a>
+
+          <a class="download-card" href="https://excel.cloud.microsoft/es-es/" target="_blank" rel="noopener">
+            <div>
+              <h3>Hoja de calculo</h3>
+              <p>Accede a tu hoja de calculo en Microsoft Excel.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Enlaces importantes</h2>
+      <button
+        class="boton"
+        data-toggle-target="installToggle5"
+        data-label-show="Mostrar enlaces"
+        data-label-hide="Ocultar enlaces"
+        aria-expanded="false"
+      >
+        Mostrar enlaces
+      </button>
+
+      <div id="installToggle5" class="hidden">
+        <p>Accede rapido a tu correo desde cualquier dispositivo.</p>
+        <div class="grid">
+          <a class="download-card" href="https://workspace.google.com/intl/es-419/gmail/" target="_blank" rel="noopener">
+            <div>
+              <h3>Google Mail</h3>
+              <p>Accede a tu bandeja de entrada de Google Mail.</p>
+            </div>
+          </a>
+
+ <a class="download-card" href="https://web.whatsapp.com/" target="_blank" rel="noopener">
+            <div>
+              <h3>WhatsApp</h3>
+              <p>Accede a tu cuenta de WhatsApp en linea.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    creado por sebas.
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
